@@ -2,6 +2,67 @@
 @use "../settings/functions" as *;
 @use "../mixins/breakpoints" as *;
 
+.grid-col3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  @include mq {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.pickup {
+  margin-top: 44px;
+  .pickup__img {
+    text-align: center;
+  }
+  .pickup__text {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .pickup__more {
+    text-align: center;
+    margin-top: 15px;
+    > a {
+      font-size: fz(14);
+      text-decoration: none;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: currentColor;
+        opacity: 1;
+        transition:
+          opacity 0.3s,
+          bottom 0.3s;
+      }
+      &:hover {
+        &::after {
+          opacity: 0;
+          bottom: -2px;
+        }
+      }
+    }
+  }
+}
+
+.content-grid {
+  display: flex;
+  .content-grid__item {
+    &.articles {
+      width: 66.83%;
+      max-width: 759px;
+      margin-right: 3.58%;
+    }
+    &.sidebar {
+      width: 30%;
+    }
+  }
+}
 // .grid-container {
 //   display: grid;
 //   grid-template-columns: repeat(4, 1fr);

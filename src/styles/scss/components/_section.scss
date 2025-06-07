@@ -5,13 +5,12 @@
 .section {
   .section__inner {
     max-width: 1200px;
-    padding: 0 17px;
+    padding: 0 16px;
     margin-inline: auto;
   }
-  // .inner-s {
-  //   max-width: 600px;
-  // }
-  // .inner-m {
-  //   max-width: 800px;
-  // }
+  &.pickup {
+    & + .section {
+      margin-top: 70px;
+    }
+  }
 }

@@ -2,7 +2,46 @@
 @use "../settings/functions" as *;
 @use "../mixins/breakpoints" as *;
 
+@mixin wrapper {
+  max-width: 1200px;
+  padding: 10px 16px;
+  margin-inline: auto;
+}
+
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  .header__inner {
+    background: $base-color-01;
+  }
+  .header__logo {
+    @include wrapper;
+  }
+  .header__nav-wrap {
+    background: $main-color-01;
+  }
+  .header__nav {
+    @include wrapper;
+    @include mq {
+      overflow-x: scroll;
+    }
+  }
+  .header__link {
+    display: flex;
+    > li {
+      margin-right: 60px;
+      &:last-child {
+        margin-right: 0;
+        padding-right: 16px;
+      }
+      a {
+        color: $text-color-white;
+        font-size: fz(14);
+      }
+    }
+  }
   // position: fixed;
   // top: 0;
   // z-index: 99;
