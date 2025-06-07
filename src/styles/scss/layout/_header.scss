@@ -1,0 +1,102 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.header {
+  // position: fixed;
+  // top: 0;
+  // z-index: 99;
+  // background: #fff;
+  // width: 100%;
+  // .header__inner {
+  //   max-width: 1360px;
+  //   padding: 32px 40px;
+  //   margin-inline: auto;
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+  // .header__logo {
+  //   margin-block: $leading-trim;
+  //   a {
+  //     font-family: "Arial", "sans-serif";
+  //     font-weight: bold;
+  //     text-decoration: none;
+  //     font-size: fz(22.5);
+  //     color: $text-color;
+  //     &:hover {
+  //       opacity: 0.7;
+  //     }
+  //   }
+  // }
+  // .header__nav-wrap {
+  //   position: relative;
+  //   .header__nav-button {
+  //     position: relative;
+  //     width: 30px;
+  //     height: 30px;
+  //     background: none;
+  //     border: none;
+  //     cursor: pointer;
+  //     z-index: 1001;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     gap: 6px;
+  //     &.is-active .header__nav-button-bar {
+  //       background-color: #fff;
+  //     }
+  //     &.is-active .header__nav-button-bar:nth-child(1) {
+  //       transform: rotate(45deg) translate(4px, 4px);
+  //     }
+  //     &.is-active .header__nav-button-bar:nth-child(2) {
+  //       transform: rotate(-45deg) translate(2px, -2px);
+  //     }
+  //     &.is-active + .header__nav .header__link {
+  //       animation: headerNavSlide 0.5s ease-in-out;
+  //     }
+  //   }
+  //   .header__nav-button-bar {
+  //     display: block;
+  //     width: 30px;
+  //     height: 2px;
+  //     background-color: #000;
+  //     transition: transform 0.3s ease;
+  //     z-index: 99;
+  //   }
+  //   .header__nav {
+  //     position: fixed;
+  //     inset: 0;
+  //     background-color: rgba(0, 0, 0, 0.8);
+  //     display: none;
+  //     z-index: 1000;
+  //     &.is-active {
+  //       display: block;
+  //     }
+  //   }
+  //   .header__link {
+  //     list-style: none;
+  //     padding: 0;
+  //     margin: 0;
+  //     width: fit-content;
+  //     padding: 36px 50px;
+  //     li {
+  //       margin-block: $leading-trim;
+  //       margin-bottom: 14px;
+  //       a {
+  //         color: #fff;
+  //         text-decoration: none;
+  //         text-transform: uppercase;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+// @keyframes headerNavSlide {
+//   0% {
+//     transform: translateX(-100%);
+//   }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }

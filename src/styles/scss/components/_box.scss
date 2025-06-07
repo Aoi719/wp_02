@@ -1,0 +1,34 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+// .article-box {
+//   display: flex;
+//   @include mq {
+//     flex-direction: column;
+//   }
+//   .article-box__item {
+//     &:first-child {
+//       @include mq {
+//         margin-bottom: 32px;
+//       }
+//       @include mqup {
+//         margin-right: 64px;
+//       }
+//     }
+//   }
+//   .article-box__img {
+//     flex: 0 0 50%;
+//     @include mq {
+//       flex: 0 0 100%;
+//       text-align: center;
+//     }
+//   }
+//   .article-box__text {
+//     flex-grow: 1;
+//     .text {
+//     }
+//     .price {
+//     }
+//   }
+// }

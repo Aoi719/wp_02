@@ -1,0 +1,36 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+// .grid-container {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 35px;
+//   @include mq {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+//   .grid-item {
+//     .grid-item__img {
+//       max-width: 100%;
+//       height: auto;
+//       margin-bottom: 12px;
+//     }
+//     .grid-item__link {
+//       transition: opacity 0.3s;
+//       &:hover {
+//         opacity: 0.7;
+//         text-decoration: none;
+//       }
+//     }
+//     .grid-item__text {
+//       margin-top: 12px;
+//       font-size: fz(12);
+//       margin-block: $leading-trim;
+//     }
+//     .grid-item__price {
+//       margin-top: 8px;
+//       font-size: fz(12);
+//       margin-block: $leading-trim;
+//     }
+//   }
+// }

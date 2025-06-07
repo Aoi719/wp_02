@@ -1,0 +1,17 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.section {
+  .section__inner {
+    max-width: 1200px;
+    padding: 0 17px;
+    margin-inline: auto;
+  }
+  // .inner-s {
+  //   max-width: 600px;
+  // }
+  // .inner-m {
+  //   max-width: 800px;
+  // }
+}
