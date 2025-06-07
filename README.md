@@ -9,4 +9,4 @@
 
 ## 制作時間
 
-- HTML：0.5h
+- TOPページ（HTML、CSS）：2.5h
