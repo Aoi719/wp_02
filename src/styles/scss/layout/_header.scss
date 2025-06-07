@@ -18,6 +18,9 @@
   }
   .header__logo {
     @include wrapper;
+    > a img {
+      display: block;
+    }
   }
   .header__nav-wrap {
     background: $main-color-01;

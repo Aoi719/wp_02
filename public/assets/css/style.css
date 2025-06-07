@@ -140,6 +140,9 @@ a:hover {
   padding: 10px 16px;
   margin-inline: auto;
 }
+.header .header__logo > a img {
+  display: block;
+}
 .header .header__nav-wrap {
   background: #333;
 }
