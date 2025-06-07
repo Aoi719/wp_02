@@ -3,26 +3,83 @@
 @use "../mixins/breakpoints" as *;
 
 .footer {
+  margin-top: 140px;
+  background-color: $base-color-02;
   .footer__inner {
-    // max-width: 1360px;
-    // padding: 32px 40px;
-    // margin-inline: auto;
-    // display: flex;
-    // justify-content: space-between;
-    // @include mq {
-    //   flex-direction: column;
-    // }
+    max-width: 1200px;
+    padding: 0 16px;
+    margin-inline: auto;
   }
-  //   .footer__link {
-  //     display: flex;
-  //     li {
-  //       margin-right: 32px;
-  //     }
-  //     a {
-  //       font-size: fz(12);
-  //     }
-  //   }
-  //   .footer__copy {
-  //     font-size: fz(10);
-  //   }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5.08%;
+    padding: 50px 0;
+    @include mq {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+    .footer-grid__item {
+    }
+    .footer-grid__title {
+      margin-bottom: 30px;
+      font-size: fz(18);
+      font-weight: bold;
+    }
+  }
+  .footer-about {
+    > .text {
+      font-size: fz(14);
+      margin-bottom: 20px;
+    }
+    .footer-about__list {
+      li {
+        > a {
+          position: relative;
+          padding-left: 10px;
+          font-size: fz(14);
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0.5em;
+            left: 0;
+            background: currentColor;
+            width: 8px;
+            height: 12px;
+            clip-path: polygon(8px 50%, 0% 0%, 0% 12px);
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+  }
+  .footer-menu {
+    .footer-menu__list {
+      > li {
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 15px;
+          border-top: 1px solid #777;
+          font-size: fz(14);
+          transition: background-color 0.3s;
+          &:hover {
+            text-decoration: none;
+            background-color: #eee;
+          }
+        }
+        &:last-child {
+          a {
+            border-bottom: 1px solid #777;
+          }
+        }
+      }
+    }
+  }
+  .footer-copy {
+    font-size: fz(12);
+    padding: 10px 0;
+    text-align: center;
+  }
 }

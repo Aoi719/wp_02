@@ -12,7 +12,6 @@
   }
 }
 .pickup {
-  margin-top: 44px;
   .pickup__img {
     text-align: center;
   }
@@ -52,14 +51,24 @@
 
 .content-grid {
   display: flex;
+  @include mq {
+    flex-direction: column;
+  }
   .content-grid__item {
     &.articles {
-      width: 66.83%;
-      max-width: 759px;
-      margin-right: 3.58%;
+      @include mqup {
+        width: 66.83%;
+        max-width: 759px;
+        margin-right: 3.58%;
+      }
     }
     &.sidebar {
-      width: 30%;
+      @include mq {
+        margin-top: 80px;
+      }
+      @include mqup {
+        width: 30%;
+      }
     }
   }
 }

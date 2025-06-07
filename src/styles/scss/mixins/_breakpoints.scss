@@ -9,13 +9,13 @@ $breakpoints: (
   "xl": "1200px",
 ) !default;
 
-@mixin mq($breakpoint: md2) {
+@mixin mq($breakpoint: md) {
   @media screen and (max-width:#{map.get($breakpoints, $breakpoint)}) {
     @content;
   }
 }
 
-@mixin mqup($breakpoint: md2) {
+@mixin mqup($breakpoint: md) {
   @media screen and (min-width:#{map.get($breakpoints, $breakpoint)}) {
     @content;
   }

@@ -9,8 +9,15 @@
     margin-inline: auto;
   }
   &.pickup {
+    margin-top: 44px;
+    @include mq {
+      margin-top: 34px;
+    }
     & + .section {
       margin-top: 70px;
+      @include mq {
+        margin-top: 100px;
+      }
     }
   }
 }
