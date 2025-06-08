@@ -1,7 +1,7 @@
 <aside class="content-grid__item sidebar">
   <div class="sidebar__item profile">
     <div class="profile__img">
-      <img src="/assets/images/img_prof.jpg" alt="" />
+      <img src="<?php echo esc_url(get_theme_file_uri('/assets/images/img_prof.jpg')); ?>" alt="プロフィール画像" />
     </div>
     <div class="profile__name">Name Name</div>
     <div class="profile__text">
@@ -38,39 +38,51 @@
   <div class="sidebar__item archive">
     <div class="sidebar__title">Archive</div>
     <ul class="archive__list">
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
-      <li>
-        <a href="">XXXX年XX月(XX)</a>
-      </li>
+      <?php
+      wp_get_archives(array(
+        'type' => 'monthly',
+        'limit' => 12,
+        'show_post_count' => false,
+        'format' => 'custom',
+        'before' => '<li>',
+        'after' => '</li>',
+      ));
+      ?>
     </ul>
+    <!-- <ul class="archive__list">
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+      <li>
+        <a href="">XXXX年XX月(XX)</a>
+      </li>
+    </ul> -->
   </div>
 </aside>
