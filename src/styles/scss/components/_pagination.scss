@@ -1,0 +1,17 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.pagination {
+  margin-top: 60px;
+  > ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

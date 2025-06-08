@@ -1010,3 +1010,17 @@ a:hover {
     margin-top: 90px;
   }
 }
+
+.pagination {
+  margin-top: 60px;
+}
+.pagination > ul {
+  display: flex;
+  justify-content: center;
+}
+.pagination > ul li {
+  margin-right: 30px;
+}
+.pagination > ul li:last-child {
+  margin-right: 0;
+}
