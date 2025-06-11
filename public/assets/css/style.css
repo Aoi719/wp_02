@@ -873,19 +873,19 @@ a:hover {
   padding: 0 16px;
   margin-inline: auto;
 }
-.section.pickup {
+.main .section:first-child {
   margin-top: 44px;
 }
 @media screen and (max-width: 768px) {
-  .section.pickup {
+  .main .section:first-child {
     margin-top: 34px;
   }
 }
-.section.pickup + .section {
+.main .section:first-child + .section {
   margin-top: 70px;
 }
 @media screen and (max-width: 768px) {
-  .section.pickup + .section {
+  .main .section:first-child + .section {
     margin-top: 100px;
   }
 }
@@ -978,6 +978,10 @@ a:hover {
   margin-top: 10px;
   margin-inline: auto;
 }
+.articles .article .article__section p + .wp-block-image,
+.articles .article .article__section p + p {
+  margin-top: 1em;
+}
 .articles .article .article__more {
   text-align: center;
   margin-top: 30px;
@@ -1023,4 +1027,17 @@ a:hover {
 }
 .pagination > ul li:last-child {
   margin-right: 0;
+}
+
+.primary-heading {
+  margin-block: calc((1em - 1lh) / 2);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 48px;
+  border-bottom: 2px solid currentColor;
+}
+
+.back {
+  margin-top: 60px;
+  text-align: center;
 }
